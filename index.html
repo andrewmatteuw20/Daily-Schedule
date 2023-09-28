@@ -13,8 +13,8 @@
         }
 
         .schedule {
-            max-width: 600px;
-            margin: 20px auto;
+            max-width: 100%;
+            margin: 20px;
             background-color: #fff;
             border-radius: 10px;
             padding: 20px;
@@ -40,17 +40,28 @@
         }
 
         .time {
-            background-color: #216ea1;
+            background-color: #007BFF;
             color: #fff;
             padding: 5px 10px;
             border-radius: 5px;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .schedule {
+                margin: 10px;
+            }
+
+            li {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="schedule">
         <h1>Daily Schedule</h1>
-        <ul> 
+        <ul>
             <li><span class="time">05:00 am - 05:30 am:</span> Wake up and get ready for the day</li>
             <li><span class="time">05:30 am - 06:45 am:</span> Reading</li>
             <li><span class="time">06:45 am - 08:00 am:</span> Gym</li>
@@ -66,7 +77,7 @@
             <li><span class="time">07:30 pm - 09:30 pm:</span> Thesis work or Code</li>
             <li><span class="time">09:30 pm - 10:30 pm:</span> Reading a book</li>
             <li><span class="time">10:30 pm - 11:00 pm:</span> Wind-down and prepare for bed</li>
-            <li><span class="time">11:00 pm:</span>Bedtime</li>
+            <li><span class="time">11:00 pm:</span> Bedtime</li>
         </ul>
     </div>
 </body>
